@@ -217,7 +217,7 @@ Time              : YYYY-MM-DD HH:MM:SS
 ### CLI Launcher
 
 <p align="center">
-  <img src=".github/screenshots/first" width="850">
+  <img src=".github/screenshots/first.png" width="850">
 </p>
 
 ---

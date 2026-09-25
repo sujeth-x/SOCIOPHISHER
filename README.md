@@ -1,91 +1,75 @@
-# SOCIOPHISHER
+<!-- Sociophisher -->
 
-## Security Awareness Training Lab
+<p align="center">
+  <img src=".github/misc/logo.png">
+</p>
 
-Sociophisher is a **security-awareness training simulator** built with Python and Flask.
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/sujeth-x/SOCIOPHISHER?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/sujeth-x/SOCIOPHISHER?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/sujeth-x/SOCIOPHISHER?color=red&style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/sujeth-x/SOCIOPHISHER?color=teal&style=for-the-badge">
+</p>
 
-The project is designed to demonstrate how realistic-looking login pages can be used in social-engineering scenarios and help users understand how to identify suspicious authentication pages.
+<p align="center">
+  <img src="https://img.shields.io/badge/Author-sujeth--x-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
+  <img src="https://img.shields.io/badge/Maintained%3F-Yes-lightblue?style=flat-square">
+  <img src="https://img.shields.io/badge/Written%20In-Python-yellow?style=flat-square">
+  <img src="https://img.shields.io/badge/Framework-Flask-black?style=flat-square">
+  <img src="https://img.shields.io/badge/Purpose-Security%20Awareness-red?style=flat-square">
+</p>
 
-> ⚠️ **Educational & Authorized Use Only**
->
-> Sociophisher is intended for cybersecurity education, security-awareness training, and authorized lab environments.
-> Do not use it against systems, accounts, or users without permission.
+<p align="center">
+  <b>A security-awareness training lab for learning how phishing and social engineering work.</b>
+</p>
 
----
+##
 
-## 🎯 Project Objective
+<h3><p align="center">Disclaimer</p></h3>
 
-The main objective of Sociophisher is to provide a controlled environment for learning about:
+<i>
 
-- Phishing awareness
-- Social engineering techniques
-- Suspicious login-page identification
-- Security-awareness training
-- Web application routing
-- Public tunneling for authorized demonstrations
-- Basic security-event logging
+<b>Sociophisher</b> is an educational security-awareness training project.
 
----
+This project is designed for <b>authorized cybersecurity training, personal laboratories, demonstrations, and controlled environments only.</b>
 
-## 🚀 Features
+<b>Do not use this project against systems, accounts, or individuals without explicit authorization.</b>
 
-- Flask-based training server
-- Multiple security-awareness templates
-- Instagram training page
-- Facebook training page
-- LinkedIn training page
-- Google/Gmail training page
-- Google training flow
-- Cloudflare Tunnel integration
-- ngrok Tunnel integration
-- CLI-based launcher
-- Public training URLs
-- Training-event logging
-- Password values are **not stored**
-- Manual browser opening
-- Clean shutdown of Flask and tunnel processes
+Sociophisher is designed as a training simulator and does not intentionally store password values.
 
----
+Any information generated during a training session should be treated as dummy or authorized training data.
 
-## 🛠️ Technology Stack
+The author and contributors are not responsible for misuse of this project.
 
-| Technology | Purpose |
-|------------|---------|
-| Python | Core programming language |
-| Flask | Web application/backend |
-| HTML/CSS | Training interfaces |
-| Cloudflare Tunnel | Authorized public tunnel |
-| ngrok | Authorized public tunnel |
-| Git | Version control |
-| GitHub | Source-code repository |
+<b>Always obtain proper authorization before conducting any security-awareness exercise or security testing.</b>
 
----
+</i>
 
-## 📁 Project Structure
+##
 
-```text
-SOCIOPHISHER/
-│
-├── app.py
-├── sociophisher.py
-├── README.md
-├── .gitignore
-│
-├── templates/
-│   ├── instagram/
-│   │   └── index.html
-│   │
-│   ├── facebook/
-│   │   └── index.html
-│   │
-│   ├── linkedin/
-│   │   └── index.html
-│   │
-│   ├── google1/
-│   │   └── index.html
-│   │
-│   └── google2/
-│       └── index.html
-│
-└── venv/
-    └── (local virtual environment - not committed)
+### Features
+
+- Security-awareness training environment.
+- Multiple training templates.
+  - Instagram
+  - Facebook
+  - LinkedIn
+  - Google / Gmail
+- Flask-based local training server.
+- Interactive CLI launcher.
+- Cloudflare Tunnel support.
+- ngrok Tunnel support.
+- Public training URLs for authorized demonstrations.
+- Training-event logging.
+- Password values are not stored.
+- Clean shutdown of Flask and tunnel processes.
+- Beginner-friendly project structure.
+- Designed for cybersecurity education.
+
+##
+
+### Installation
+
+- Clone this repository:

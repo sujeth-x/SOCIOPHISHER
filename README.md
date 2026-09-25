@@ -1,431 +1,383 @@
-<!-- Sociophisher -->
-
-<div align="center">
-
-  <h1>🛡️ SOCIOPHISHER</h1>
-
-  <h3>Security Awareness Training Lab</h3>
-
-  <p>
-    <img src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge">
-    <img src="https://img.shields.io/github/license/sujeth-x/SOCIOPHISHER?style=for-the-badge">
-    <img src="https://img.shields.io/github/stars/sujeth-x/SOCIOPHISHER?style=for-the-badge">
-    <img src="https://img.shields.io/github/issues/sujeth-x/SOCIOPHISHER?color=red&style=for-the-badge">
-    <img src="https://img.shields.io/github/forks/sujeth-x/SOCIOPHISHER?color=teal&style=for-the-badge">
-  </p>
-
-  <p>
-    <img src="https://img.shields.io/badge/Author-sujeth--x-blue?style=flat-square">
-    <img src="https://img.shields.io/badge/Open%20Source-Yes-darkgreen?style=flat-square">
-    <img src="https://img.shields.io/badge/Maintained%3F-Yes-lightblue?style=flat-square">
-    <img src="https://img.shields.io/badge/Written%20In-Python-yellow?style=flat-square">
-    <img src="https://img.shields.io/badge/Framework-Flask-black?style=flat-square">
-  </p>
-
-  <p>
-    <b>A security-awareness training lab for learning about phishing and social engineering.</b>
-  </p>
-
-</div>
-
-<hr>
-
-<h2 align="center">Disclaimer</h2>
-
-<p>
-  <i>
-    <b>Sociophisher</b> is an educational security-awareness training project
-    designed for authorized cybersecurity training, personal laboratories,
-    demonstrations, and controlled environments.
-  </i>
+<p align="center">
+  <img src=".github/misc/logo.png" width="180">
 </p>
 
-<p>
-  <i>
-    Do not use this project against systems, accounts, or individuals without
-    explicit authorization.
-  </i>
+<h1 align="center">Sociophisher</h1>
+
+<p align="center">
+  <b>Security Awareness & Social Engineering Training Lab</b>
 </p>
 
-<p>
-  <i>
-    Sociophisher is designed as a training simulator and does not intentionally
-    store password values.
-  </i>
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Kali%20Linux-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Language-Python-yellow?style=flat-square">
+  <img src="https://img.shields.io/badge/Framework-Flask-black?style=flat-square">
+  <img src="https://img.shields.io/badge/Purpose-Security%20Awareness-green?style=flat-square">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square">
 </p>
 
-<p>
-  <i>
-    The author and contributors are not responsible for misuse of this project.
-    Always obtain appropriate authorization before conducting any
-    security-awareness exercise or security testing.
-  </i>
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#screenshots">Screenshots</a> •
+  <a href="#security">Security</a>
 </p>
 
-<hr>
+---
 
-<h2>Features</h2>
+## 📖 About
 
-<ul>
-  <li>Security-awareness training environment</li>
-  <li>Multiple training templates</li>
-  <ul>
-    <li>Instagram</li>
-    <li>Facebook</li>
-    <li>LinkedIn</li>
-    <li>Google / Gmail</li>
-  </ul>
-  <li>Flask-based local training server</li>
-  <li>Interactive CLI launcher</li>
-  <li>Cloudflare Tunnel support</li>
-  <li>ngrok Tunnel support</li>
-  <li>Public training URLs for authorized demonstrations</li>
-  <li>Training-event logging</li>
-  <li>Password values are not stored</li>
-  <li>Clean shutdown of services</li>
-  <li>Beginner-friendly project structure</li>
-  <li>Designed for cybersecurity education</li>
-</ul>
+**Sociophisher** is a security-awareness training laboratory designed to demonstrate how social-engineering and phishing-style interfaces can be used during authorized security training.
 
-<hr>
+The project provides realistic-looking training interfaces for commonly targeted services while intentionally avoiding the storage of real passwords.
 
-<h2>Installation</h2>
+The goal is to help students and security teams understand:
 
-<ul>
-  <li>
-    Clone this repository:
+- How phishing pages can look convincing
+- How users may interact with suspicious login pages
+- How authentication attempts can be detected
+- How security-awareness exercises can be performed safely
+- How security teams can analyze simulated events
 
-    <pre><code>git clone --depth=1 https://github.com/sujeth-x/SOCIOPHISHER.git</code></pre>
-  </li>
+> ⚠️ **This project is intended for authorized security-awareness training, education, and laboratory environments only.**
 
-  <li>
-    Go to the cloned directory:
+---
 
-    <pre><code>cd SOCIOPHISHER</code></pre>
-  </li>
+## ✨ Features
 
-  <li>
-    Create a Python virtual environment:
+- 🎯 Interactive security-awareness training pages
+- 📱 Multiple social-media-style templates
+- 🔐 Password values are **never stored**
+- 📝 Simulated login-attempt detection
+- 🖥️ Flask-based local training server
+- 🐧 Designed for Kali Linux
+- 🌐 Supports authorized tunnel-based demonstrations
+- 📊 Simple CLI-based launcher
+- 🔄 Automatic routing between training templates
+- 🧪 Suitable for cybersecurity learning labs
+- 🛡️ Designed with privacy and safe-training principles
 
-    <pre><code>python3 -m venv venv</code></pre>
-  </li>
+---
 
-  <li>
-    Activate the virtual environment:
+## 🎨 Training Templates
 
-    <pre><code>source venv/bin/activate</code></pre>
-  </li>
+Sociophisher currently includes training interfaces for:
 
-  <li>
-    Install the required dependencies:
+| # | Template | Route |
+|---|---|---|
+| 01 | Instagram | `/instagram/` |
+| 02 | Facebook | `/facebook/` |
+| 03 | LinkedIn | `/linkedin/` |
+| 04 | Gmail / Google | `/gmail/` |
 
-    <pre><code>pip install flask colorama pyfiglet</code></pre>
-  </li>
-</ul>
+These pages are intended to demonstrate **social-engineering awareness**, not to collect real credentials.
 
-<hr>
+---
 
-<h2>Running Sociophisher</h2>
+## 🛠️ Technology Stack
 
-<p>Start the main launcher:</p>
+```text
+Python
+Flask
+HTML
+CSS
+JavaScript
+Kali Linux
+Cloudflare Tunnel
+ngrok
+```
 
-<pre><code>python3 sociophisher.py</code></pre>
+---
 
-<p>The CLI provides the following training templates:</p>
+## 📂 Project Structure
 
-<pre><code>[01] Instagram
-[02] Facebook
-[03] LinkedIn
-[04] Gmail
-
-[99] About
-[00] Exit</code></pre>
-
-<p>
-  Select a training template to start the Flask training environment.
-</p>
-
-<p>The local server runs on:</p>
-
-<pre><code>http://127.0.0.1:5000</code></pre>
-
-<hr>
-
-<h2>Public Training Tunnels</h2>
-
-<p>
-  Sociophisher supports public tunneling for
-  <b>authorized security-awareness demonstrations</b>.
-</p>
-
-<h3>Cloudflare Tunnel</h3>
-
-<pre><code>cloudflared tunnel --url http://127.0.0.1:5000</code></pre>
-
-<h3>ngrok</h3>
-
-<pre><code>ngrok http 5000</code></pre>
-
-<p>
-  The <code>sociophisher.py</code> launcher can start the Flask server and
-  configured tunnel processes together.
-</p>
-
-<blockquote>
-  Public tunnels should only be used in environments where you have
-  explicit authorization.
-</blockquote>
-
-<hr>
-
-<h2>Training Templates</h2>
-
-<h3>📸 Instagram</h3>
-
-<pre><code>/instagram/</code></pre>
-
-<h3>📘 Facebook</h3>
-
-<pre><code>/facebook/</code></pre>
-
-<h3>💼 LinkedIn</h3>
-
-<pre><code>/linkedin/</code></pre>
-
-<h3>📧 Google / Gmail</h3>
-
-<pre><code>/gmail/</code></pre>
-
-<hr>
-
-<h2>Security &amp; Privacy</h2>
-
-<p>
-  Sociophisher is designed as a
-  <b>security-awareness training simulator</b>.
-</p>
-
-<p>Training events may record:</p>
-
-<pre><code>Template
-Username / Identifier
-Timestamp
-Training Event</code></pre>
-
-<p>
-  Password values are intentionally <b>not stored</b>.
-</p>
-
-<p>Example:</p>
-
-<pre><code>Password entered  : YES
-Password value    : [REDACTED]</code></pre>
-
-<hr>
-
-<h2>Example Training Event</h2>
-
-<pre><code>============================================================
-          LOGIN ATTEMPT DETECTED
-============================================================
-Template          : LinkedIn
-Username          : training-user@example.com
-Password entered  : YES
-Password value    : [REDACTED]
-Time              : 2026-09-25 11:30:00
-============================================================</code></pre>
-
-<p>
-  The purpose of this event is to demonstrate that a training interaction
-  occurred without retaining the submitted password.
-</p>
-
-<hr>
-
-<h2>Dependencies</h2>
-
-<p><b>Sociophisher</b> requires:</p>
-
-<ul>
-  <li><code>python3</code></li>
-  <li><code>pip</code></li>
-  <li><code>git</code></li>
-  <li><code>flask</code></li>
-  <li><code>colorama</code></li>
-  <li><code>pyfiglet</code></li>
-</ul>
-
-<p>Optional tunneling tools:</p>
-
-<ul>
-  <li><code>cloudflared</code></li>
-  <li><code>ngrok</code></li>
-</ul>
-
-<hr>
-
-<details>
-  <summary><h2>Project Structure</h2></summary>
-
-<pre><code>SOCIOPHISHER/
+```text
+SOCIOPHISHER/
 │
 ├── app.py
 ├── sociophisher.py
-├── README.md
-├── .gitignore
 │
-└── templates/
-    ├── instagram/
-    │   └── index.html
-    │
-    ├── facebook/
-    │   └── index.html
-    │
-    ├── linkedin/
-    │   └── index.html
-    │
-    ├── google1/
-    │   └── index.html
-    │
-    └── google2/
-        └── index.html</code></pre>
+├── templates/
+│   ├── facebook/
+│   │   └── index.html
+│   │
+│   ├── instagram/
+│   │   └── index.html
+│   │
+│   ├── linkedin/
+│   │   └── index.html
+│   │
+│   ├── google1/
+│   │   └── index.html
+│   │
+│   ├── google2/
+│   │   └── index.html
+│   │
+│   └── login.html
+│
+├── .github/
+│   └── screenshots/
+│       ├── Screenshot 2026-09-25 122359.png
+│       ├── first.png
+│       ├── interface.png
+│       ├── last.png
+│       └── third.png
+│
+├── venv/
+│
+└── README.md
+```
 
-</details>
+---
 
-<hr>
+## ⚙️ Installation
 
-<details>
-  <summary><h2>Learning Objectives</h2></summary>
+### 1. Clone the repository
 
-<ul>
-  <li>Phishing awareness</li>
-  <li>Social engineering</li>
-  <li>Suspicious login-page identification</li>
-  <li>Flask routing</li>
-  <li>HTTP GET and POST requests</li>
-  <li>HTML forms</li>
-  <li>Redirects</li>
-  <li>Linux command-line usage</li>
-  <li>Public tunneling</li>
-  <li>Security-event logging</li>
-  <li>Git and GitHub workflow</li>
-</ul>
+```bash
+git clone git@github.com:sujeth-x/SOCIOPHISHER.git
+```
 
-</details>
+### 2. Enter the project
 
-<hr>
+```bash
+cd SOCIOPHISHER
+```
 
-<h2 align="center"><i>:: Workflow ::</i></h2>
+### 3. Create a virtual environment
 
-<div align="center">
+```bash
+python3 -m venv venv
+```
 
-<pre><code>                SOCIOPHISHER
-                     │
-                     ▼
-              Select Template
-                     │
-          ┌──────────┼──────────┐
-          │          │          │
-          ▼          ▼          ▼
-      Instagram   LinkedIn    Gmail
-          │          │          │
-          └──────────┼──────────┘
-                     │
-                     ▼
-              Training Page
-                     │
-                     ▼
-            Training Interaction
-                     │
-                     ▼
-             Security Event
-                     │
-                     ▼
-          Password NOT Stored</code></pre>
+### 4. Activate the virtual environment
 
-</div>
+```bash
+source venv/bin/activate
+```
 
-<hr>
+### 5. Install Flask
 
-<h2>Technology Stack</h2>
+```bash
+pip install flask
+```
 
-<div align="center">
+---
 
-<img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python">
-<img src="https://img.shields.io/badge/Flask-Web%20Framework-black?style=for-the-badge&logo=flask">
-<img src="https://img.shields.io/badge/Cloudflare-Tunnel-orange?style=for-the-badge&logo=cloudflare">
-<img src="https://img.shields.io/badge/ngrok-Tunnel-green?style=for-the-badge">
-<img src="https://img.shields.io/badge/Linux-Environment-black?style=for-the-badge&logo=linux">
-<img src="https://img.shields.io/badge/Git-Version%20Control-orange?style=for-the-badge&logo=git">
+## 🚀 Usage
 
-</div>
+Start Sociophisher using:
 
-<hr>
+```bash
+python3 sociophisher.py
+```
 
-<h2>Future Improvements</h2>
+The launcher starts the Flask application and provides the available training routes.
 
-<ul>
-  <li>Splunk integration</li>
-  <li>Security-awareness dashboard</li>
-  <li>Training analytics</li>
-  <li>SIEM event forwarding</li>
-  <li>Detection-rule demonstrations</li>
-  <li>Event correlation</li>
-  <li>Training-session reports</li>
-  <li>Additional safe training scenarios</li>
-  <li>Improved CLI interface</li>
-  <li>Docker-based isolated deployment</li>
-</ul>
+The local training server runs on:
 
-<hr>
+```text
+http://127.0.0.1:5000
+```
 
-<h2>Responsible Use</h2>
+You can then access the individual training pages:
 
-<p>Sociophisher is intended only for:</p>
+```text
+Instagram
+http://127.0.0.1:5000/instagram/
 
-<ul>
-  <li>Personal cybersecurity laboratories</li>
-  <li>Security-awareness training</li>
-  <li>Authorized demonstrations</li>
-  <li>Controlled testing environments</li>
-</ul>
+Facebook
+http://127.0.0.1:5000/facebook/
 
-<p>Do not use the project to:</p>
+LinkedIn
+http://127.0.0.1:5000/linkedin/
 
-<ul>
-  <li>Collect real credentials</li>
-  <li>Store passwords</li>
-  <li>Target users without permission</li>
-  <li>Impersonate individuals</li>
-  <li>Attack third-party systems</li>
-  <li>Bypass security controls</li>
-  <li>Conduct unauthorized phishing campaigns</li>
-</ul>
+Gmail
+http://127.0.0.1:5000/gmail/
+```
 
-<hr>
+---
 
-<h2>Find Me on</h2>
+## 🔐 Security & Privacy
 
-<p>
+Sociophisher is designed specifically to avoid collecting real passwords.
+
+When a simulated login is submitted, the application records only safe training information such as:
+
+```text
+Template          : Instagram
+Username          : example@example.com
+Password entered  : YES
+Password value    : User123
+Time              : YYYY-MM-DD HH:MM:SS
+```
+
+
+
+## 📸 Screenshots
+
+### CLI Launcher
+
+<p align="center">
+  <img src=".github/screenshots/interface.png" width="850">
+</p>
+
+---
+
+### Training Interface
+
+<p align="center">
+  <img src=".github/screenshots/first.png" width="850">
+</p>
+
+---
+
+### Social Engineering Training Page
+
+<p align="center">
+  <img src=".github/screenshots/third.png" width="850">
+</p>
+
+---
+
+### Training Flow
+
+<p align="center">
+  <img src=".github/screenshots/last.png" width="850">
+</p>
+
+---
+
+### Additional Screenshot
+
+<p align="center">
+  <img src=".github/screenshots/Screenshot%202026-09-25%20122359.png" width="850">
+</p>
+
+---
+
+## 🌐 Authorized Remote Demonstrations
+
+Sociophisher can be used in controlled environments where an authorized tunnel is required for security-awareness demonstrations.
+
+Supported tunnel providers in the project environment include:
+
+```text
+Cloudflare Tunnel
+ngrok
+```
+
+Remote demonstrations should only be conducted with:
+
+- Explicit authorization
+- Training participants who have consented
+- Non-production accounts
+- No collection of real passwords
+- No impersonation of users
+- No unauthorized distribution of training URLs
+
+---
+
+## 🧪 Example Training Workflow
+
+```text
+                    SOCIOPHISHER
+                         │
+                         ▼
+                  Flask Application
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+              ▼                     ▼
+          Training UI           Event Detection
+              │                     │
+              ▼                     ▼
+      Simulated Login          Safe Logging
+              │                     │
+              └──────────┬──────────┘
+                         ▼
+                  Awareness Training
+```
+
+---
+
+## 🎯 Learning Objectives
+
+Sociophisher can be used to learn and demonstrate:
+
+- Social engineering concepts
+- Phishing awareness
+- Credential-security risks
+- Web application routing
+- Flask development
+- HTTP request handling
+- Form submission
+- Authentication-flow concepts
+- Security event logging
+- Security-awareness training
+- Basic incident-analysis concepts
+
+---
+
+## 🔭 Future Improvements
+
+Planned improvements may include:
+
+- 📊 Splunk integration
+- 📈 Security-awareness dashboard
+- 📝 Training reports
+- 🔔 Real-time event monitoring
+- 🧪 Additional training templates
+- 🛡️ Improved authorization controls
+- 👥 Training-user management
+- 📚 More cybersecurity learning modules
+
+---
+
+## ⚠️ Disclaimer
+
+Sociophisher is developed for **educational and authorized security-awareness purposes only**.
+
+Do not use this project to:
+
+- Collect real credentials
+- Target accounts without authorization
+- Impersonate individuals
+- Conduct unauthorized phishing campaigns
+- Distribute malicious links
+- Perform social-engineering attacks against unsuspecting users
+
+The author is not responsible for misuse of this project.
+
+**Use responsibly. Train ethically.**
+
+---
+
+## 👨‍💻 Author
+
+<p align="center">
+  <b>Sujeth S</b>
+</p>
+
+<p align="center">
+  Cybersecurity & Software Engineering Enthusiast
+</p>
+
+<p align="center">
   <a href="https://github.com/sujeth-x">
-    <img src="https://img.shields.io/badge/GitHub-sujeth--x-blue?style=for-the-badge&logo=github">
+    GitHub
   </a>
 </p>
 
-<hr>
+---
 
-<div align="center">
+## ⭐ Support
 
-<h2>🛡️ SOCIOPHISHER</h2>
+If this project helped you learn something about cybersecurity or web security, consider giving the repository a ⭐.
 
-<h3><i>Learn • Simulate • Detect • Defend</i></h3>
+---
 
-<p>
-  Made for cybersecurity education and security awareness.
+<p align="center">
+  <b>Sociophisher — Learn. Simulate. Detect. Secure.</b>
 </p>
-
-<p>⭐ If you find this project useful, consider starring the repository!</p>
-
-</div>
-
-<!-- // -->

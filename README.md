@@ -1,8 +1,4 @@
-<p align="center">
-  <img src=".github/misc/logo.png" width="180">
-</p>
-
-<h1 align="center">Sociophisher</h1>
+ <h1>🛡️ SOCIOPHISHER</h1>
 
 <p align="center">
   <b>Security Awareness & Social Engineering Training Lab</b>
@@ -220,7 +216,7 @@ Time              : YYYY-MM-DD HH:MM:SS
 ### CLI Launcher
 
 <p align="center">
-  <img src=".github/screenshots/interface.png" width="850">
+  <img src=".github/screenshots/first" width="850">
 </p>
 
 ---
@@ -228,7 +224,7 @@ Time              : YYYY-MM-DD HH:MM:SS
 ### Training Interface
 
 <p align="center">
-  <img src=".github/screenshots/first.png" width="850">
+  <img src=".github/screenshots/interface.png" width="850">
 </p>
 
 ---

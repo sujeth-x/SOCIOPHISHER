@@ -241,7 +241,7 @@ Time              : YYYY-MM-DD HH:MM:SS
 ### Training Flow
 
 <p align="center">
-  <img src=".github/screenshots/last.png" width="850">
+  <img src=".github/screenshots/Screenshot%202026-09-25%20122359.png" width="850">
 </p>
 
 ---
@@ -249,7 +249,7 @@ Time              : YYYY-MM-DD HH:MM:SS
 ### Additional Screenshot
 
 <p align="center">
-  <img src=".github/screenshots/Screenshot%202026-09-25%20122359.png" width="850">
+  <img src=".github/screenshots/last.png" width="850">
 </p>
 
 ---

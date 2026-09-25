@@ -1,5 +1,6 @@
- <h1>🛡️ SOCIOPHISHER</h1>
-
+ <center>
+  <h1>🛡️ SOCIOPHISHER</h1>
+ </center>
 <p align="center">
   <b>Security Awareness & Social Engineering Training Lab</b>
 </p>
